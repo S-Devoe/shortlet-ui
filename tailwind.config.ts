@@ -27,8 +27,8 @@ const config: Config = {
       colors: {
         primary: "rgb(var(--color-primary) / <alpha-value>)", // #FF5626
         lime: "rgb(var(--color-tertiary-lime) / <alpha-value>)", // #E0FFA9
-        deepBlue: "var()",
-        deepBlueLight: "var(--primary-light)",
+        deepBlue: "var(--deep-blue)",
+        deepBlueLight: "var(--deep-blue-light)",
         white: "var(--white)",
         orange: "var(--orange)",
         gray1: "var(--gray1)",

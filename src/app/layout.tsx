@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { sans, serif } from "./fonts";
 import { clsx } from "clsx";
-import "@/app/globals.scss";
+import "@/app/globals.css";
 import StyledComponentsRegistry from "../lib/AntdRegistry";
 
 export const metadata: Metadata = {

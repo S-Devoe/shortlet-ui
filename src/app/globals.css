@@ -40,16 +40,27 @@
     --white: #fff;
     --orange: #ff5626;
     --gray1: #0e1004;
-    --gray6: #b9bcc8;
     --black06: #060606;
+    --gray5: #6e717c;
+    --gray6: #b9bcc8;
+    --gray7: #d3dce6;
     --gray75: #757d8a;
     --gray10: #eff2f7;
     --grayE7: #e7e7e8;
+    --gray2: #25292d;
+    --gray-black: #08080c;
+    --tertiary-nude: #eeeed8;
+    --black23: #231f20;
   }
 }
 
 body {
   background: white;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -97,4 +108,14 @@ h1.title {
 }
 .ant-skeleton-paragraph {
   margin-block-start: 16px !important;
+}
+
+.hide-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
 }

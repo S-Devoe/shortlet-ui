@@ -33,7 +33,7 @@ const MessageSection = () => {
             <p className="text-start text-[1.125rem] text-gray2 font-[400] leading-[1.25rem] ">
               {message.body}
             </p>
-            <h4 className="text-[0.75rem] text-gray5 font-[400] leading-[1.25rem] ">
+            <h4 className="mt-[2px] text-[0.75rem] text-gray5 font-[400] leading-[1.25rem] ">
               {message.date}
             </h4>
           </div>

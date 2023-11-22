@@ -1,5 +1,5 @@
 "use client";
-import { numberToNaira } from "@/util/currency";
+import { numberToNaira } from "@/app/util/currency";
 import { Slider } from "antd";
 import React from "react";
 
