@@ -17,7 +17,7 @@ const MobileBottomBar = () => {
           href={link.route}
           key={`link-${i + 1}`}
           className={` ${
-            pathname.includes(link.route) ? "text-primary" : "text-gray-six"
+            pathname.includes(link.route) ? "text-orange" : "text-gray-six"
           }  `}
         >
           {link.icon}
@@ -35,7 +35,7 @@ const navLinks = [
     icon: <SearchIcon />,
   },
   {
-    route: "/waitlist",
+    route: "/wishlist",
     icon: <HeartIcon />,
   },
   {
