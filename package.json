@@ -15,6 +15,7 @@
     "@formspree/react": "^2.5.1",
     "@headlessui/react": "^1.7.17",
     "antd": "^5.11.0",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "sass": "^1.69.5",
     "tailwind-merge": "^2.0.0",

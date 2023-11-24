@@ -5,7 +5,7 @@ export enum InputType {
 type InputProps = {
   type: InputType;
   name: string;
-  placeholder: string;
+  placeholder?: string;
   value?: string;
   label?: string;
   icon?: JSX.Element;

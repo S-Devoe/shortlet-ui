@@ -5,16 +5,17 @@ import { useRouter } from "next/navigation";
 
 interface Props {
   className?: string;
+  onClick?: () => void;
 }
-const BackBtn = ({ className }: Props) => {
+const BackBtn = ({ className, onClick }: Props) => {
   const router = useRouter();
   return (
     <button
       className={cn(
-        "text-[1.25rem] text-grayBlack flex items-center font-[500]",
+        "text-[1.25rem] text-grayBlack cursor-pointer flex items-center font-[500]",
         className
       )}
-      onClick={() => router.back()}
+      onClick={onClick ? onClick : () => router.back()}
     >
       <span className="h-[1.7rem] w-[1.7rem] rounded-full grid place-content-center border border-grayBlack mr-[1.125rem] ">
         <ArrowLeft />
