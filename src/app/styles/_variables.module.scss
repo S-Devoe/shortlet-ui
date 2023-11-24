@@ -1,0 +1,31 @@
+$primary-color: #16133d;
+$orange: #ff5626;
+$red: "#FF595E";
+$jasmine: "#F3CB2B";
+$brun: "#005A1D";
+$lilac: "#EEEAF9";
+$nude: "#EEEED8";
+$baby: "#FFDEE1";
+$lime: "#E0FFA9";
+$mint: "#D2FDFF";
+$blue: "#97CBFF";
+$gray: "#0E1004";
+$black: "#1C1F22";
+$white: "#FFFFFF";
+
+:export {
+  primaryColor: $primary-color;
+  orange: $orange;
+  red: $red;
+  jasmine: $jasmine;
+  brun: $brun;
+  lilac: $lilac;
+  nude: $nude;
+  baby: $baby;
+  lime: $lime;
+  mint: $mint;
+  blue: $blue;
+  gray: $gray;
+  black: $black;
+  white: $white;
+}

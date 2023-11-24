@@ -1,21 +1,21 @@
 import House from "@/assets/images/house.png";
-import WaitlistCard from "../components/WaitlistCard";
+import WishlistCard from "../components/WishlistCard";
 
-const WaitllistMainContent = () => {
+const WishlistMainContent = () => {
   return (
     <section className="flex flex-col gap-4 mt-2 md:mt-[2.5rem] md:grid grid-cols-3 md:gap-8 lg:gap-[3.5rem] ">
       {Array(6)
-        .fill(mockWaitlist)
+        .fill(mockWishlist)
         .map((items, i) => (
-          <WaitlistCard {...items} key={`waitlist-${i + 1}`} />
+          <WishlistCard {...items} key={`waitlist-${i + 1}`} />
         ))}
     </section>
   );
 };
 
-export default WaitllistMainContent;
+export default WishlistMainContent;
 
-const mockWaitlist = {
+const mockWishlist = {
   title: "Jacob Mews Skypoint",
   image: House,
   rating: 4.6,

@@ -11,7 +11,7 @@ const MessageSection = () => {
         <button
           type="button"
           className={`pb-4 flex items-center gap-[1.5rem] ${
-            mockMessages.length == i + 1 ? "" : "border-gray6 border-b "
+            mockMessages.length == i + 1 ? "" : "border-gray-six border-b "
           }`}
           key={`message-${i + 1}`}
           onClick={() => router.push(`/messages/${i + 1}`)}
@@ -30,10 +30,10 @@ const MessageSection = () => {
             <h3 className="text-[1rem] font-[700] leading-[1.5rem] text-black06">
               {message.name}
             </h3>
-            <p className="text-start text-[1.125rem] text-gray2 font-[400] leading-[1.25rem] ">
+            <p className="text-start text-[1.125rem] text-gray-two font-[400] leading-[1.25rem] ">
               {message.body}
             </p>
-            <h4 className="mt-[2px] text-[0.75rem] text-gray5 font-[400] leading-[1.25rem] ">
+            <h4 className="mt-[2px] text-[0.75rem] text-gray-five font-[400] leading-[1.25rem] ">
               {message.date}
             </h4>
           </div>

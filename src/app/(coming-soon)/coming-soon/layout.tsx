@@ -1,6 +1,6 @@
 "use client";
 import { clsx } from "clsx";
-import "@/app/globals.css";
+import "@/app/globals.scss";
 import Button from "@/components/button/button";
 import Logo from "@/assets/logo.component";
 import Link from "next/link";

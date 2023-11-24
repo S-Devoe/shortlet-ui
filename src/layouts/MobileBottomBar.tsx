@@ -17,7 +17,7 @@ const MobileBottomBar = () => {
           href={link.route}
           key={`link-${i + 1}`}
           className={` ${
-            pathname.includes(link.route) ? "text-orange" : "text-gray6"
+            pathname.includes(link.route) ? "text-primary" : "text-gray-six"
           }  `}
         >
           {link.icon}

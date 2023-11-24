@@ -11,9 +11,9 @@ interface Props {
   bedrooms: number | string;
   guests: number | string;
 }
-const WaitlistCard = (props: Props) => {
+const WishlistCard = (props: Props) => {
   return (
-    <div className="w-full border rounded-[0.5rem] md:rounded-[1rem] border-grayE7">
+    <div className="w-full border rounded-[0.5rem] md:rounded-[1rem] border-gray-seven">
       <div className="relative h-[12rem] w-full ">
         <Image
           fill
@@ -55,4 +55,4 @@ const WaitlistCard = (props: Props) => {
   );
 };
 
-export default WaitlistCard;
+export default WishlistCard;

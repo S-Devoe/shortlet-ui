@@ -5,6 +5,7 @@ import Image from "next/image";
 
 const MessageDetails = () => {
   const userId = 1;
+
   return (
     <section className="mt-[1.5rem] h-full flex flex-col justify-between">
       <div className="">
@@ -14,7 +15,7 @@ const MessageDetails = () => {
           </h2>
           <VerifyIcon />
         </div>
-        <p className="text-gray6 text-[0.75rem] font-[400] ">
+        <p className="text-gray-six text-[0.75rem] font-[400] ">
           Response time: 20 mins
         </p>
       </div>
@@ -24,38 +25,31 @@ const MessageDetails = () => {
         </h3>
         <div className="w-full">
           {mockChat.chat.map((chat, i) => (
-            <>
-              <div className="flex gap-4 w-full mb-4" key={`chat-${i + 1}`}>
-                {userId !== chat.chatId && (
-                  <div className="relative h-[2.25rem] w-[2.25rem] ">
-                    <Image
-                      src={chat.senderImage!}
-                      alt="img"
-                      sizes="100%"
-                      fill
-                    />
-                  </div>
-                )}
-                <div
-                  className={`w-full flex flex-col ${
-                    userId !== chat.chatId ? "" : "items-end"
+            <div className="flex gap-4 w-full mb-4" key={`chat-${i + 1}`}>
+              {userId !== chat.chatId && (
+                <div className="relative h-[2.25rem] w-[2.25rem] ">
+                  <Image src={chat.senderImage!} alt="img" sizes="100%" fill />
+                </div>
+              )}
+              <div
+                className={`w-full flex flex-col ${
+                  userId !== chat.chatId ? "" : "items-end"
+                } `}
+              >
+                <p
+                  className={`p-3 rounded-[1rem] text-black23 text-[0.875rem] font-[400] ${
+                    userId !== chat.chatId
+                      ? "border border-gray-seven w-full"
+                      : "self-end bg-nude w-[90%]"
                   } `}
                 >
-                  <p
-                    className={`p-3 rounded-[1rem] text-black23 text-[0.875rem] font-[400] ${
-                      userId !== chat.chatId
-                        ? "border border-gray7 w-full"
-                        : "self-end bg-tertiaryNude w-[90%]"
-                    } `}
-                  >
-                    {chat.messageBody}
-                  </p>
-                  <p className="text-gray75 text-[0.625rem] font-[400] mt-[2px]">
-                    {chat.messageTime}
-                  </p>
-                </div>
+                  {chat.messageBody}
+                </p>
+                <p className="text-gray75 text-[0.625rem] font-[400] mt-[2px]">
+                  {chat.messageTime}
+                </p>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
@@ -64,7 +58,7 @@ const MessageDetails = () => {
         <input
           type="text"
           placeholder="Write a message"
-          className="outline-none border-none bg-transparent h-full w-full font-[400] text-[0.875rem] text-gray1 placeholder:text-[0.875rem]"
+          className="outline-none border-none bg-transparent h-full w-full font-[400] text-[0.875rem] text-gray placeholder:text-[0.875rem]"
         />
         <button type="button" className="text-deepBlueLight">
           <SendIcon />

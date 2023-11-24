@@ -3,9 +3,9 @@ import Container from "@/components/container/Container";
 import EmptyPage from "@/components/empty-state/EmptyPage";
 import PageHeader from "@/components/headers/PageHeader";
 import { useEffect, useState } from "react";
-import WaitllistMainContent from "./contents/WaitllistMainContent";
+import WaitllistMainContent from "./contents/WishlistMainContent";
 
-const WaitlistContent = () => {
+const WishlistContent = () => {
   const [emptyState, setEmptyState] = useState(true);
 
   // to temporarily show the empty state for 3.5s
@@ -18,7 +18,7 @@ const WaitlistContent = () => {
   return (
     <Container className="h-full w-full">
       <PageHeader
-        header="My Waitlist"
+        header="My Wishlist"
         body="Hello Benjamin, here are the apartments you wish to book in the future"
       />
       {emptyState ? <EmptyPage /> : <WaitllistMainContent />}
@@ -26,4 +26,4 @@ const WaitlistContent = () => {
   );
 };
 
-export default WaitlistContent;
+export default WishlistContent;
