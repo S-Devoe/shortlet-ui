@@ -41,7 +41,7 @@ const ProfileSection = () => {
           </div>
         </div>
         {/* email and phone */}
-        <div className="flex items-center gap-[2rem] md:gap-[7.5rem] my-[1.5rem]">
+        <div className="flex flex-col md:flex-row md:items-center gap-[2rem] md:gap-[7.5rem] my-[1.5rem]">
           <div className="text-gray-five flex items-center gap-2">
             <SmsIcon />
             <div className="flex flex-col gap-[2px]">
