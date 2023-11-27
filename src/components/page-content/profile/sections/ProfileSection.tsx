@@ -1,10 +1,11 @@
 "use client";
+import dynamic from "next/dynamic";
 import { Avatar } from "antd";
 import VerifyIcon from "@/components/icons/VerifyIcon";
 import SmsIcon from "@/components/icons/SmsIcon";
 import PhoneIcon from "@/components/icons/PhoneIcon";
 import Button from "@/components/button/button-cva";
-import ShortletYourPlace from "./ShortletYourPlace";
+import ShortletYourPlace from "../components/ShortletYourPlace";
 import CoinIcon from "@/components/icons/CoinIcon";
 import VerifyBoldIcon from "@/components/icons/VerifyBoldIcon";
 import NotesIcon from "@/components/icons/NotesIcon";
@@ -12,11 +13,38 @@ import HeadphoneIcon from "@/components/icons/HeadphoneIcon";
 import Link from "next/link";
 import ArrowSquareRight from "@/components/icons/ArrowSquareRight";
 import Badge from "@/components/badge/badge";
-import { useState } from "react";
-import EditProfileModal from "../modals/EditProfileModal";
+import { Fragment, useState } from "react";
+import TermsAndConditionModal from "@/components/modals/TermsAndConditionModal";
+import LinkWithBorder from "@/components/link/LinkWithBorder";
+const EditProfileModal = dynamic(() => import("../modals/EditProfileModal"));
 
 const ProfileSection = () => {
   const [editModal, setEditModal] = useState(false);
+  const [tacModal, setTacModal] = useState(false);
+
+  const settings = [
+    {
+      icon: <CoinIcon />,
+      title: "Payments",
+      link: "",
+    },
+    {
+      icon: <VerifyBoldIcon />,
+      title: "Verification",
+      badge: "verified",
+      link: "",
+    },
+    {
+      icon: <NotesIcon />,
+      title: "Terms and Conditions",
+      isModal: true,
+    },
+    {
+      icon: <HeadphoneIcon />,
+      title: "Support",
+      link: "/support",
+    },
+  ];
 
   const handleEditModal = () => {
     setEditModal((prev) => !prev);
@@ -84,55 +112,45 @@ const ProfileSection = () => {
           </h3>
           <div className="flex flex-col gap-2">
             {settings.map((setting, i) => (
-              <Link
-                href=""
-                className="border-b border-gray-six flex items-center justify-between py-4"
-                key={`ind-${i + 1}`}
-              >
-                <div className="flex items-center gap-1 text-gray-five ">
-                  <div className="w-[2rem] shrink-0 ">{setting.icon}</div>
-                  <h4 className="text-black06 text-[1rem] font-[500] ">
-                    {setting.title}
-                  </h4>
-                  {setting.badge && (
-                    <Badge
-                      variant="success"
-                      className="ml-2"
-                      text={setting.badge}
-                    />
-                  )}
-                </div>
-                <div className="text-gray-five">
-                  <ArrowSquareRight />
-                </div>
-              </Link>
+              <Fragment key={`ind-${i + 1}`}>
+                {setting.isModal ? (
+                  <button
+                    // if another modal ends up coming up, just use
+                    // a fuction with a if or swith statement to toggle the specific modal
+                    onClick={() => setTacModal(true)}
+                    type="button"
+                    className="border-b border-gray-six flex items-center justify-between py-4"
+                  >
+                    <div className="flex items-center gap-1 text-gray-five ">
+                      <div className="w-[2rem] shrink-0 ">{setting.icon}</div>
+                      <h4 className="text-black06 text-[1rem] font-[500] ">
+                        {setting.title}
+                      </h4>
+                    </div>
+                    <div className="text-gray-five">
+                      <ArrowSquareRight />
+                    </div>
+                  </button>
+                ) : (
+                  <LinkWithBorder
+                    title={setting.title}
+                    icon={setting.icon}
+                    badge={setting.badge}
+                    link={setting.link ?? " "}
+                  />
+                )}
+              </Fragment>
             ))}
           </div>
         </div>
       </section>
+      <TermsAndConditionModal
+        open={tacModal}
+        onClose={() => setTacModal(false)}
+      />
       <EditProfileModal open={editModal} onClose={() => setEditModal(false)} />
     </>
   );
 };
 
 export default ProfileSection;
-
-const settings = [
-  {
-    icon: <CoinIcon />,
-    title: "Payments",
-  },
-  {
-    icon: <VerifyBoldIcon />,
-    title: "Verification",
-    badge: "verified",
-  },
-  {
-    icon: <NotesIcon />,
-    title: "Terms and Conditions",
-  },
-  {
-    icon: <HeadphoneIcon />,
-    title: "Support",
-  },
-];
