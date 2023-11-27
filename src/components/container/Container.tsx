@@ -6,7 +6,7 @@ interface Props {
 }
 const Container = ({ className, children }: Props) => {
   return (
-    <section className={cn("px-[1.56rem] py-[1.25rem]", className)}>
+    <section className={cn("px-[1.56rem] pt-[1.25rem] pb-[4rem] ", className)}>
       {children}
     </section>
   );

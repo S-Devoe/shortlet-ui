@@ -7,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <main className="relative w-full flex min-h-[100dvh] h-full flex-col items-center justify-between ">
-      <section className="h-full w-full pb-[4rem] max-w-[71rem] ">
+      <section className="h-full w-full max-w-[71rem] ">
         {children}
       </section>
       <MobileBottomBar />
