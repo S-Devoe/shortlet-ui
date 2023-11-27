@@ -10,13 +10,12 @@ import CoinIcon from "@/components/icons/CoinIcon";
 import VerifyBoldIcon from "@/components/icons/VerifyBoldIcon";
 import NotesIcon from "@/components/icons/NotesIcon";
 import HeadphoneIcon from "@/components/icons/HeadphoneIcon";
-import Link from "next/link";
 import ArrowSquareRight from "@/components/icons/ArrowSquareRight";
-import Badge from "@/components/badge/badge";
 import { Fragment, useState } from "react";
-import TermsAndConditionModal from "@/components/modals/TermsAndConditionModal";
+
 import LinkWithBorder from "@/components/link/LinkWithBorder";
 const EditProfileModal = dynamic(() => import("../modals/EditProfileModal"));
+const TermsAndConditionModal  = dynamic(() => import("@/components/modals/TermsAndConditionModal"));
 
 const ProfileSection = () => {
   const [editModal, setEditModal] = useState(false);

@@ -15,7 +15,7 @@ const TermsAndConditionModal = ({ open, onClose }: Props) => {
       onCancel={onClose}
       footer={null}
       styles={modalStyles}
-      className="!w-full max-w-[63rem] h-full max-h-[95vh] rounded-[1rem] overflow-scroll "
+      className="!w-full max-w-[63rem] h-full md:max-h-[95vh] rounded-[1rem] md:overflow-scroll "
     >
       <BackBtn onClick={onClose} />
       <section className="mt-[2rem]">
