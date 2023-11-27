@@ -72,12 +72,12 @@ const ProfileSection = () => {
           variant="orangeOutline"
           type="button"
           text="Edit Profile"
-          onClick={handleEditModal}
+          onClick={() => setEditModal(true)}
         />
         {/* shortlet  */}
         <ShortletYourPlace />
-        {/* settings  */}
 
+        {/* settings  */}
         <div className="my-6">
           <h3 className="text-[1.125rem] mb-4 text-primary-darker font-[700]">
             Settings
@@ -110,7 +110,7 @@ const ProfileSection = () => {
           </div>
         </div>
       </section>
-      <EditProfileModal open={editModal} setOpen={handleEditModal} />
+      <EditProfileModal open={editModal} onClose={() => setEditModal(false)} />
     </>
   );
 };
