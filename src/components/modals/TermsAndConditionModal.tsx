@@ -21,7 +21,7 @@ const TermsAndConditionModal = ({ open, onClose }: Props) => {
       <section className="mt-[2rem]">
         <PageHeader
           header="Terms & Conditions"
-          headerClassName="text-primary text-[1.5rem] font-[600]  "
+          headerClassName="text-primary text-serif text-[1.5rem] font-[600]  "
         />
         <ul className="flex flex-col gap-7 mt-3">
           {terms.map((term, i) => (

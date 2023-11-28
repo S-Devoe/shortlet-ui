@@ -25,12 +25,12 @@ const supportLinks = [
   {
     icon: <MessageQuestionIcon />,
     title: "FAQs",
-    link: "",
+    link: "/faq",
   },
   {
     icon: <MessageNotifIcon />,
     title: "Support Chat",
-    link: "",
+    link: "/support/chat",
   },
   {
     icon: <HeadphoneIcon />,

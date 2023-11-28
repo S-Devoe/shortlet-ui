@@ -1,19 +1,43 @@
-import WaitlistCharacterSvg from "../charcters/WaitlistCharacterSvg";
+"use client";
+import { useRouter } from "next/navigation";
 
-const EmptyPage = () => {
+interface Props {
+  btnLink?: string;
+  title: string;
+  icon: JSX.Element;
+  btnText?: string;
+  body: string;
+  showBtn?: boolean;
+}
+
+const EmptyPage = ({
+  btnLink,
+  title,
+  icon,
+  btnText,
+  body,
+  showBtn = true,
+}: Props) => {
+  const router = useRouter();
+
   return (
     <section className="flex items-center flex-col">
-      <WaitlistCharacterSvg className="mt-[5.95rem]" />
+      {icon}
       <h2 className="text-deepBlueLight leading-[2.625rem] font-[600] text-[2rem] font-serif mt-[2.5rem]">
-        Nothing here yet!
+        {title}
       </h2>
-      <p className="text-gray mt-[0.5rem] font-sans leading-[162.5%] text-[1rem] text-center max-w-[18rem] md:max-w-[100%] ">
-        You have not saved any places in your wishlist. You can add some place
-        to your wish list from search home.
+      <p className="text-gray mt-[0.5rem] font-sans leading-[162.5%] text-[1rem] text-center max-w-[18rem] md:max-w-[80%] ">
+        {body}
       </p>
-      <button className="w-full h-[3rem] bg-orange rounded-[0.5rem] text-white mt-[1.75rem] max-w-[20.3rem] ">
-        Start a search now
-      </button>
+      {showBtn && (
+        <button
+          type="button"
+          onClick={() => router.push(btnLink ?? "")}
+          className="w-full h-[3rem] bg-orange rounded-[0.5rem] text-white mt-[1.75rem] max-w-[20.3rem] "
+        >
+          {btnText}
+        </button>
+      )}
     </section>
   );
 };

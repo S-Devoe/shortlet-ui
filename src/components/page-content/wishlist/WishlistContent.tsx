@@ -4,6 +4,7 @@ import EmptyPage from "@/components/empty-state/EmptyPage";
 import PageHeader from "@/components/headers/PageHeader";
 import { useEffect, useState } from "react";
 import WaitllistMainContent from "./contents/WishlistMainContent";
+import WaitlistCharacterSvg from "@/components/charcters/WaitlistCharacterSvg";
 
 const WishlistContent = () => {
   const [emptyState, setEmptyState] = useState(true);
@@ -21,7 +22,17 @@ const WishlistContent = () => {
         header="My Wishlist"
         body="Hello Benjamin, here are the apartments you wish to book in the future"
       />
-      {emptyState ? <EmptyPage /> : <WaitllistMainContent />}
+      {emptyState ? (
+        <EmptyPage
+          icon={<WaitlistCharacterSvg className="mt-[5.95rem]" />}
+          title="Nothing here yet!"
+          body="You have not saved any places in your wishlist. You can add some place
+        to your wish list from search home."
+          btnText="Start a search now"
+        />
+      ) : (
+        <WaitllistMainContent />
+      )}
     </Container>
   );
 };

@@ -8,6 +8,7 @@ export const serif = Fraunces({
 });
 
 export const sans = Plus_Jakarta_Sans({
+  weight: [ "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
