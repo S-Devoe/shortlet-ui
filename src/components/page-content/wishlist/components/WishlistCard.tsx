@@ -1,6 +1,6 @@
 import FourCirclesIcon from "@/components/icons/FourCirclesIcon";
-import LikedIcon from "@/components/icons/navs/LikedIcon";
-import RatingStar from "@/components/icons/navs/RatingStar";
+import LikedIcon from "@/components/icons/LikedIcon";
+import RatingStar from "@/components/icons/RatingStar";
 import Image, { StaticImageData } from "next/image";
 
 interface Props {

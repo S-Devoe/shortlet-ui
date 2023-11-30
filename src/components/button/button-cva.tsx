@@ -1,21 +1,24 @@
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 
-import React from "react";
-
+interface Props {
+  text: string;
+  type?: "button" | "submit";
+  className?: string;
+  onClick?: () => void;
+  variant?: VariantProps<typeof buttonVariants>["variant"];
+  icon?: JSX.Element;
+  disabled?: boolean;
+}
 export default function Button({
   text,
   type,
   className,
   onClick,
   variant,
-}: {
-  text: string;
-  type?: "button" | "submit";
-  className?: string;
-  onClick?: () => void;
-  variant?: any;
-}) {
+  icon,
+  disabled,
+}: Props) {
   return (
     <button
       className={cn(
@@ -26,8 +29,10 @@ export default function Button({
       )}
       onClick={onClick}
       type={type}
+      disabled={disabled}
     >
       {text}
+      {icon && icon}
     </button>
   );
 }
@@ -39,7 +44,9 @@ const buttonVariants = cva(
       variant: {
         default: "bg-orange text-white hover:bg-orange/90 text-[1rem] ",
         orangeOutline:
-          "border border-orange text-[0.875rem]  text-orange bg-transparent",
+          "border border-orange text-[0.875rem] text-orange px-4 bg-transparent",
+        outline:
+          "border border-primary text-[0.875rem] text-primary px-4 bg-transparent",
       },
     },
     defaultVariants: {
