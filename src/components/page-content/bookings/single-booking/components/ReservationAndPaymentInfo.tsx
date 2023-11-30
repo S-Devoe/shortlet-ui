@@ -21,8 +21,7 @@ const ReservationAndPaymentInfo = ({ status }: Props) => {
   return (
     <section className="w-full md:max-w-[21rem]">
       <div className="w-full">
-        {(status?.toLowerCase() !== "pending" ||
-          status?.toLowerCase() !== "declined") && (
+        {status?.toLowerCase() !== "pending" && (
           <div className="w-full flex justify-between gap-[1.5rem]">
             <Button
               className=" px-[1.5rem] text-[1rem] leading-[normal] disabled:bg-[#FFEFEB] disabled:text-orange "
