@@ -28,7 +28,7 @@ const BookingsSection = () => {
 
   return (
     <section className="w-full mt-[2rem] flex flex-col gap-8 items-center">
-      <section className="flex items-center">
+      <section className="flex items-center w-full overflow-x-scroll hide-scroll md:justify-center ">
         {bookingsTab.map((item, i) => (
           <button
             type="button"
