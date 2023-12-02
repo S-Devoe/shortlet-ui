@@ -15,10 +15,9 @@ export default function ComingSoonHeroSection() {
         </h1>
         <Flex gap={24}>
           <Button
-            type="primary"
             text="Join the Waitlist"
             width="large"
-            className={["z-30 text-white"]}
+            className="z-30 text-white"
             onClick={onClick}
           />
         </Flex>

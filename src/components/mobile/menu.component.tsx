@@ -34,14 +34,7 @@ const Menu = ({
       </li>
       <li className="mt-6">
         <Button
-          type="primary"
-          className={[
-            "bg-primary",
-            "px-5",
-            "py-3",
-            "rounded",
-            "text-sm text-white",
-          ]}
+          className={"bg-orange px-5 py-3 rounded text-sm text-white"}
           onClick={action}
           text={"Join the Waitlist"}
         />

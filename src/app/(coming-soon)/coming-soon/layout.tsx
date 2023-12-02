@@ -74,14 +74,7 @@ export default function ComingSoonLayout({
           <div className="hidden md:block">
             <Flex gap={16} align={"center"}>
               <Button
-                type="primary"
-                className={[
-                  "bg-primary",
-                  "px-5",
-                  "py-3",
-                  "rounded",
-                  "text-sm text-white",
-                ]}
+                className={["px-5", "py-3", "rounded", "text-sm text-white"]}
                 onClick={onClick}
                 text={"Join the Waitlist"}
               />
