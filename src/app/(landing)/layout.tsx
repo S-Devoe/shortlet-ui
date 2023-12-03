@@ -54,14 +54,7 @@ export default function RootLayout({
             <Flex gap={16} align={"center"}>
               <Link href="https://wa.link/w5fb6p">
                 <Button
-                  type="primary"
-                  className={[
-                    "bg-primary",
-                    "px-5",
-                    "py-3",
-                    "rounded",
-                    "text-sm text-white",
-                  ]}
+                  className={["px-5", "py-3", "rounded", "text-sm text-white"]}
                   text={"Get Started"}
                 />
               </Link>
