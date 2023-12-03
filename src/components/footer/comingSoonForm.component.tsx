@@ -36,7 +36,6 @@ export default function ComingSoonForm({
         <Button
           className={["py-4 w-full md:w-fit text-white"]}
           text={"Join the waitlist"}
-          type={"primary"}
         />
       </div>
     </form>
