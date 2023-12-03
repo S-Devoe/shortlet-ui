@@ -29,8 +29,8 @@ export default function HassleHomeComponent() {
               <Link href="https://wa.link/w5fb6p">
                 <Button
                   text="Get Started"
-                  type="secondary"
-                  className={["border border-primary text-primary w-fit h-fit"]}
+                  variant="orangeOutline"
+                  className={["w-fit h-fit"]}
                 />
               </Link>
               <Guy width={200} />
@@ -49,8 +49,8 @@ export default function HassleHomeComponent() {
               <Link href="https://wa.link/w5fb6p">
                 <Button
                   text="Get Started"
-                  type="secondary"
-                  className={["border border-primary text-primary w-fit h-fit"]}
+                  variant="orangeOutline"
+                  className={["w-fit h-fit"]}
                 />
               </Link>
               <Guy width={200} />

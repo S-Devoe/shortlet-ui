@@ -15,7 +15,6 @@ export default function HomeHeroSection() {
         <Flex gap={24}>
           <Link href="https://wa.link/w5fb6p">
             <Button
-              type="primary"
               text="Get Started"
               width="large"
               className={["z-30 text-white"]}
