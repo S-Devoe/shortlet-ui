@@ -10,7 +10,7 @@ const MessageDetails = () => {
     <section className="mt-[1.5rem] h-full flex flex-col justify-between">
       <div className="">
         <div className="flex items-center gap-2">
-          <h2 className="font-serif text-deepBlue font-[600] text-[1.5rem] leading-[2.625rem]">
+          <h2 className="font-serif text-primary font-[600] text-[1.5rem] leading-[2.625rem]">
             John Ken
           </h2>
           <VerifyIcon />
@@ -20,7 +20,7 @@ const MessageDetails = () => {
         </p>
       </div>
       <div className="mt-[1.5rem] h-full w-full overflow-scroll hide-scroll">
-        <h3 className="text-gray75 text-[1rem] leading-[1.125rem] font-[500] mb-[1rem]">
+        <h3 className="text-gray-seven-five text-[1rem] leading-[1.125rem] font-[500] mb-[1rem]">
           {mockChat.messageTime}
         </h3>
         <div className="w-full">
@@ -37,7 +37,7 @@ const MessageDetails = () => {
                 } `}
               >
                 <p
-                  className={`p-3 rounded-[1rem] text-black23 text-[0.875rem] font-[400] ${
+                  className={`p-3 rounded-[1rem] text-black-two-three text-[0.875rem] font-[400] ${
                     userId !== chat.chatId
                       ? "border border-gray-seven w-full"
                       : "self-end bg-nude w-[90%]"
@@ -45,7 +45,7 @@ const MessageDetails = () => {
                 >
                   {chat.messageBody}
                 </p>
-                <p className="text-gray75 text-[0.625rem] font-[400] mt-[2px]">
+                <p className="text-gray-seven-five text-[0.625rem] font-[400] mt-[2px]">
                   {chat.messageTime}
                 </p>
               </div>
@@ -54,13 +54,13 @@ const MessageDetails = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-4 w-full bg-gray10 p-4 md:p-[1.25rem]  rounded-[1rem] mb-[4.5rem] md:mb-0 ">
+      <div className="flex items-center justify-between gap-4 w-full bg-gray-ten p-4 md:p-[1.25rem]  rounded-[1rem] mb-[4.5rem] md:mb-0 ">
         <input
           type="text"
           placeholder="Write a message"
           className="outline-none border-none bg-transparent h-full w-full font-[400] text-[0.875rem] text-gray placeholder:text-[0.875rem]"
         />
-        <button type="button" className="text-deepBlueLight">
+        <button type="button" className="text-primary-lighter">
           <SendIcon />
         </button>
       </div>

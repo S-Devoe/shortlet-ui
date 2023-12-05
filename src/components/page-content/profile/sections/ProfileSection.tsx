@@ -122,7 +122,7 @@ const ProfileSection = () => {
                   >
                     <div className="flex items-center gap-1 text-gray-five ">
                       <div className="w-[2rem] shrink-0 ">{setting.icon}</div>
-                      <h4 className="text-black06 text-[1rem] font-[500] ">
+                      <h4 className="text-black-six text-[1rem] font-[500] ">
                         {setting.title}
                       </h4>
                     </div>

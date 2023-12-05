@@ -27,7 +27,7 @@ const MessageSection = () => {
           </div>
 
           <div className="flex flex-col items-start ">
-            <h3 className="text-[1rem] font-[700] leading-[1.5rem] text-black06">
+            <h3 className="text-[1rem] font-[700] leading-[1.5rem] text-black-six">
               {message.name}
             </h3>
             <p className="text-start text-[1.125rem] text-gray-two font-[400] leading-[1.25rem] ">

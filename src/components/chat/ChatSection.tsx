@@ -34,7 +34,7 @@ const ChatSection = ({ header, chatIcon, containerClassName }: Props) => {
       )}
     >
       <div className="">
-        <h2 className="font-serif text-deepBlue font-[600] text-[1.5rem] leading-[2.625rem]">
+        <h2 className="font-serif text-primary font-[600] text-[1.5rem] leading-[2.625rem]">
           {header}
         </h2>
 
@@ -43,7 +43,7 @@ const ChatSection = ({ header, chatIcon, containerClassName }: Props) => {
         </p>
       </div>
       <div className="mt-[1.5rem] h-full w-full overflow-scroll hide-scroll">
-        <h3 className="text-gray75 text-[1rem] leading-[1.125rem] font-[500] mb-[1rem]">
+        <h3 className="text-gray-seven-five text-[1rem] leading-[1.125rem] font-[500] mb-[1rem]">
           {mockChat.messageTime}
         </h3>
         <section className="w-full" ref={chatSectionRef}>
@@ -60,7 +60,7 @@ const ChatSection = ({ header, chatIcon, containerClassName }: Props) => {
                 } `}
               >
                 <p
-                  className={`p-3 rounded-[1rem] text-black23 text-[0.875rem] font-[400] ${
+                  className={`p-3 rounded-[1rem] text-black-two-three text-[0.875rem] font-[400] ${
                     userId !== chat.chatId
                       ? "border border-gray-seven w-full"
                       : "self-end bg-nude w-[90%]"
@@ -68,7 +68,7 @@ const ChatSection = ({ header, chatIcon, containerClassName }: Props) => {
                 >
                   {chat.messageBody}
                 </p>
-                <p className="text-gray75 text-[0.625rem] font-[400] mt-[2px]">
+                <p className="text-gray-seven-five text-[0.625rem] font-[400] mt-[2px]">
                   {chat.messageTime}
                 </p>
               </div>
@@ -77,7 +77,7 @@ const ChatSection = ({ header, chatIcon, containerClassName }: Props) => {
         </section>
       </div>
 
-      <div className="flex items-center justify-between gap-4 w-full bg-gray10 p-4 md:p-[1.25rem]  rounded-[1rem] mb-[4.5rem] md:mb-0 ">
+      <div className="flex items-center justify-between gap-4 w-full bg-gray-ten p-4 md:p-[1.25rem]  rounded-[1rem] mb-[4.5rem] md:mb-0 ">
         <div className="w-full flex gap-2 items-center text-primary-lighter">
           {chatIcon && chatIcon}
           <input
@@ -86,7 +86,7 @@ const ChatSection = ({ header, chatIcon, containerClassName }: Props) => {
             className="outline-none border-none bg-transparent h-full w-full font-[400] text-[0.875rem] text-gray placeholder:text-[0.875rem]"
           />
         </div>
-        <button type="button" className="text-deepBlueLight">
+        <button type="button" className="text-primary-lighter">
           <SendIcon />
         </button>
       </div>

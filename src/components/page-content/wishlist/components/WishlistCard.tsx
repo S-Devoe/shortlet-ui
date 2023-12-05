@@ -27,7 +27,7 @@ const WishlistCard = (props: Props) => {
         </button>
         <div className="z-[4] flex items-center justify-center px-[0.375rem] py-[0.25rem] absolute bg-white w-fit rounded-[0.38rem] bottom-4 right-4 text-[0.875rem]  ">
           <h4 className="text-[0.75rem] font-[500] ">
-            $ 100<span className="text-gray75"> / night</span>
+            $ 100<span className="text-gray-seven-five"> / night</span>
           </h4>
         </div>
 
@@ -36,17 +36,17 @@ const WishlistCard = (props: Props) => {
         </div>
       </div>
       <div className="p-4">
-        <h3 className="text-black06 font-[700] text-[1rem] leading-[1.25rem]">
+        <h3 className="text-black-six font-[700] text-[1rem] leading-[1.25rem]">
           {props.title}
         </h3>
         <div className="mt-1 text-[0.875rem] leading-[1rem] font-[400] flex items-center gap-[0.95rem] ">
-          <div className="flex items-center gap-[0.25rem] text-black06">
+          <div className="flex items-center gap-[0.25rem] text-black-six">
             <RatingStar />
             <h4>{props.rating}</h4>
             <h4>({props.reviews} reviews)</h4>
           </div>
 
-          <h4 className="text-gray75">
+          <h4 className="text-gray-seven-five">
             {props.guests} guests • {props.bedrooms} Bedrooms
           </h4>
         </div>

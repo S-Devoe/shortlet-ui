@@ -51,15 +51,13 @@ const config: Config = {
         "gray-six": "rgb(var(--color-gray-six) / <alpha-value>)" /* #B9BCC8 */,
         "gray-five":
           "rgb(var(--color-gray-five) / <alpha-value>)" /* #6E717C */,
-
-        deepBlue: "var(--deep-blue)",
-        deepBlueLight: "var(--deep-blue-light)",
-        black06: "var(--black06)",
-        gray75: "var(--gray75)",
-        gray10: "var(--gray10)",
-        grayE7: "var(--grayE7)",
-        grayBlack: "var(--gray-black)",
-        black23: "var(--black23)",
+        "black-six":
+          "rgb(var(--color-black-six) / <alpha-value>)" /* #060606; */,
+        "gray-seven-five":
+          "rgb(var(--color-gray-seven-five) / <alpha-value>)" /* #757D8A*/,
+        "gray-ten": "rgb(var(--color-gray-ten) / <alpha-value>)" /* #eff2f7 */,
+        "black-two-three":
+          "rgb(var(--color-black-two-three) / <alpha-value>)" /* ##231F20 */,
       },
     },
   },
