@@ -11,7 +11,7 @@ const PageHeader = ({ header, body, headerClassName}: Props) => {
     <>
       <h1
         className={cn(
-          "font-serif text-deepBlue text-[1.5rem] leading-[175%] font-[600]",
+          "font-serif text-primary text-[1.5rem] leading-[175%] font-[600]",
           headerClassName
         )}
       >

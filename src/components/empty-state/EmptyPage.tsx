@@ -23,7 +23,7 @@ const EmptyPage = ({
   return (
     <section className="flex items-center flex-col">
       {icon}
-      <h2 className="text-deepBlueLight leading-[2.625rem] font-[600] text-[2rem] font-serif mt-[2.5rem]">
+      <h2 className="text-primary-lighter leading-[2.625rem] font-[600] text-[2rem] font-serif mt-[2.5rem]">
         {title}
       </h2>
       <p className="text-gray mt-[0.5rem] font-sans leading-[162.5%] text-[1rem] text-center max-w-[18rem] md:max-w-[80%] ">

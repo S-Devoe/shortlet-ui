@@ -30,7 +30,7 @@ const ValidatedInput = ({
   return (
     <div
       className={cn(
-        "px-4 py-1 flex items-center gap-2 bg-[#F9FAFC] rounded-[0.5rem] focus-within:bg-transparent focus-within:border border-gray10 focus-within:border-primary-lighter ",
+        "px-4 py-1 flex items-center gap-2 bg-[#F9FAFC] rounded-[0.5rem] focus-within:bg-transparent focus-within:border border-gray-ten focus-within:border-primary-lighter ",
         containerClassName
       )}
     >

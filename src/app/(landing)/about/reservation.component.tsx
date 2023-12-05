@@ -2,7 +2,7 @@ import React from "react";
 import reservationImg from "@/assets/home/reservation.png";
 import Image from "next/image";
 import { Flex, Skeleton } from "antd";
-import { numberToNaira } from "@/app/util/currency";
+import { numberToNaira } from "@/lib/currency";
 
 export default function ReservationComponent() {
   return (

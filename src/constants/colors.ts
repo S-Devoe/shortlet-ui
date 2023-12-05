@@ -1,4 +1,4 @@
-const ThemeColors = {
+export const ThemeColors = {
   primary: { hex: "#16133D", rgb: "22 19 61" },
   orange: { hex: "#FF5626", rgb: "255 86 38" },
   red: { hex: "#FF595E", rgb: "255 89 94" },
@@ -20,4 +20,9 @@ const ThemeColors = {
   grayTwo: { hex: "#25292D", rgb: "37 41 45" },
   graySix: { hex: "#B9BCC8", rgb: "185 188 200" },
   grayFive: { hex: "#6E717C", rgb: "110 113 124" },
+  blackSix: { hex: "#060606", rgb: "6 6 6" },
+  graySevenFive: { hex: "#757D8A", rgb: "117 125 138" },
+  grayTen: { hex: "#EFF2F7", rgb: "239 242 247" },
+  blackTwoThree: { hex: "#231F20", rgb: "35 31 32" },
+
 };

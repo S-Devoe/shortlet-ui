@@ -11,7 +11,7 @@ import React from "react";
 const MobileBottomBar = () => {
   const pathname = usePathname();
   return (
-    <section className="md:hidden fixed bg-white bottom-[0] w-full h-[4rem] z-[999] px-8 py-3 border-t border-t-gray10 flex items-center justify-between gap-5">
+    <section className="md:hidden fixed bg-white bottom-[0] w-full h-[4rem] z-[999] px-8 py-3 border-t border-t-gray-ten flex items-center justify-between gap-5">
       {navLinks.map((link, i) => (
         <Link
           href={link.route}

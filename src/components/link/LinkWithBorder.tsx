@@ -18,7 +18,7 @@ const LinkWithBorder = ({ icon, title, badge, link }: Props) => {
     >
       <div className="flex items-center gap-1 text-gray-five ">
         <div className="w-[2rem] shrink-0 ">{icon}</div>
-        <h4 className="text-black06 text-[1rem] font-[500] ">{title}</h4>
+        <h4 className="text-black-six text-[1rem] font-[500] ">{title}</h4>
         {badge && <Badge variant="success" className="ml-2" text={badge} />}
       </div>
       <div className="text-gray-five">
