@@ -53,9 +53,6 @@ dependencies:
   redux-persist:
     specifier: ^6.0.0
     version: 6.0.0(react@18.2.0)(redux@4.2.1)
-  sass:
-    specifier: ^1.69.5
-    version: 1.69.5
   tailwind-merge:
     specifier: ^2.0.0
     version: 2.0.0
@@ -106,6 +103,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.31
     version: 8.4.31
+  sass:
+    specifier: ^1.69.5
+    version: 1.69.5
   tailwindcss:
     specifier: ^3.3.5
     version: 3.3.5
@@ -3219,7 +3219,6 @@ packages:
 
   /immutable@4.3.4:
     resolution: {integrity: sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==}
-    dev: false
 
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -5499,7 +5498,6 @@ packages:
       chokidar: 3.5.3
       immutable: 4.3.4
       source-map-js: 1.0.2
-    dev: false
 
   /saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}

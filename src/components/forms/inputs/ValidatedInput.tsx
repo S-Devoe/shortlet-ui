@@ -55,7 +55,7 @@ const ValidatedInput = ({
           id={name}
           type={type}
           {...register(name, {
-            required: required ? required : false,
+            required: required,
             ...(type === "email" && {
               pattern: {
                 value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
