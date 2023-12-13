@@ -15,7 +15,6 @@ interface Props {
 const OtpInput = ({
   length = 4,
   onChange,
-  error,
   containerClassName,
   inputClassName,
 }: Props) => {
